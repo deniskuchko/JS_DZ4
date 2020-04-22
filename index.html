@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <form id="books">
+            <div>
+                <label for="title">Название Books</label>
+                <input type="text" id="title">
+            </div>
+            <div>
+                <label for="author">Автор</label>
+                <input type="text" id="author">
+            </div>
+            <div>
+                <label for="isdatelstvo">Издательство</label>
+                <input type="text" id="isdatelstvo">
+            </div>
+            <div>
+                <label for="year">Год издания</label>
+                <input type="text" id="year">
+            </div>
+            
+            <div>
+                <label for="ekzempliars">Количество экземпляров</label>
+                <input type="text" id="ekzempliars">
+            </div>
+            <div>
+                <label for="idBook">id</label>
+                <input type="text" id="idBook">
+            </div>
+            <div>
+                <label for="kolStranic">Количество страниц</label>
+                <input type="text" id="kolStranic">
+            </div>
+            <div>
+                <input type="submit" value="Добавить книгу">
+            </div>
+        </form>
+        <form id="TravelBook">
+            <div>
+                <label for="title_TravelBook">Название TravelBook</label>
+                <input type="text" id="title_TravelBook">
+            </div>
+            <div>
+                <label for="isdatelstvo_TravelBook">Издательство</label>
+                <input type="text" id="isdatelstvo_TravelBook">
+            </div>
+            <div>
+                <label for="ekzempliars_TravelBook">Количество экземпляров</label>
+                <input type="text" id="ekzempliars_TravelBook">
+            </div>
+            <div>
+                <label for="kolStranic_TravelBook">Количество страниц</label>
+                <input type="text" id="kolStranic_TravelBook">
+            </div>
+            <div>
+                <input type="submit" value="Добавить книгу">
+            </div>
+        </form>
+        <ol id="list-books">
+            <ul class="head_list">
+                <li>Название книги</li>
+                <li>Автор книги</li>
+                <li>Издательство</li>
+                <li>Год издания</li>
+                <li>Количество экземпляров</li>
+                <li>id</li>
+                <li>Количество страниц</li>
+                <li>Действие</li>
+            </ul>
+        </ol>
+    </div>
+    
+    <script src="./book.js"></script>
+    <script src="./viewbooks.js"></script>
+    <script src="./travelBook.js"></script>
+    <script src="./viewtravelBook.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
