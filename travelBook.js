@@ -4,3 +4,9 @@ function TravelBook(title,  isdatelstvo, ekzempliars,  kolStranic){
     this.ekzempliars = ekzempliars;
     this.kolStranic = kolStranic;
 }
+
+TravelBook.prototype.getGlavi = function(kolStranic){
+    var num = kolStranic;
+    var a = Math.ceil(num/25);
+    return a;
+}

@@ -13,10 +13,11 @@ ViewBooks.prototype.addBook = function(type){
     '<li>'+type.year+'</li>'+
     '<li>'+type.ekzempliars+'</li>'+
     '<li>'+type.idBook+'</li>'+
-    '<li>'+type.kolStranic+'</li>'+
+    '<li>'+type.kolStranic+" Всего глав: "+type.getGlavi()+'</li>'+
     '<li><button class="delete">Удалить</button></li>';
 
     listAll.appendChild(ulList);
+    
 };
 
 ViewBooks.prototype.getMessage = function(message, nameCl){
@@ -25,7 +26,7 @@ ViewBooks.prototype.getMessage = function(message, nameCl){
     block.innerHTML = message;
 
     var container = document.querySelector('.container');
-    var form = document.querySelector('#books');
+    var form = document.querySelector('.container_Forms');
 
     container.insertBefore(block, form); /*добавление перед формой сообщения */
 };

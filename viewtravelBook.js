@@ -10,10 +10,11 @@ ViewTravelBook.prototype.addTravelBook = function(type){
     ulList.innerHTML = '<li>'+type.title+'</li>'+
     '<li>'+type.isdatelstvo+'</li>'+
     '<li>'+type.ekzempliars+'</li>'+
-    '<li>'+type.kolStranic+'</li>'+
+    '<li>'+type.kolStranic+" Всего глав: "+type.getGlavi()+'</li>'+
     '<li><button class="delete">Удалить</button></li>';
 
     listAll.appendChild(ulList);
+    
 };
 
 ViewTravelBook.prototype.getMessage = function(message, nameCl){
@@ -22,14 +23,16 @@ ViewTravelBook.prototype.getMessage = function(message, nameCl){
     block.innerHTML = message;
 
     var container = document.querySelector('.container');
-    var form = document.querySelector('#TravelBook');
+    var form = document.querySelector('.container_Forms');
 
     container.insertBefore(block, form); /*добавление перед формой сообщения */
 };
 
-ViewBooks.prototype.clear = function(){
-    document.querySelector('#title').value = '';
-    document.querySelector('#isdatelstvo').value = '';
-    document.querySelector('#ekzempliars').value = '';
-    document.querySelector('#kolStranic').value = '';
+ViewTravelBook.prototype.clear = function(){
+    document.querySelector('#title_TravelBook').value = '';
+    document.querySelector('#isdatelstvo_TravelBook').value = '';
+    document.querySelector('#ekzempliars_TravelBook').value = '';
+    document.querySelector('#kolStranic_TravelBook').value = '';
+
 };
+
