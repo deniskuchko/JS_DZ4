@@ -10,11 +10,15 @@ function Book(title, author, isdatelstvo, year, ekzempliars, idBook, kolStranic)
 }
 
 Book.prototype.getGlavi = function(){
-    var num = +'kolStranic';
-    var a = Math.ceil(num/25);
-    return a;
+    return Math.ceil(+this.kolStranic/25);
+    
 }
 
+function TravelBook(){
+    Book.call(this, title, isdatelstvo, ekzempliars, kolStranic);
+}
+
+TravelBook.prototype = Object.create (Book.prototype);
 
 /*var book = new Book('Title1', 'Маяковский', 1928);
 

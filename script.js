@@ -1,15 +1,3 @@
-/* var deletes = document.querySelector('button');
-
-function deletButton(){
-    for(let button of deletes){
-        button.addEventListener('click', function(){
-            button.parentElement.remove();
-            event.preventDefault();
-        })
-    }
-} */
-
-
 document.querySelector('#books').addEventListener('submit', function(event){
     var title = document.querySelector('#title').value;
     var author = document.querySelector('#author').value;

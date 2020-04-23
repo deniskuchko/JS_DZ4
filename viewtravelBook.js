@@ -10,7 +10,7 @@ ViewTravelBook.prototype.addTravelBook = function(type){
     ulList.innerHTML = '<li>'+type.title+'</li>'+
     '<li>'+type.isdatelstvo+'</li>'+
     '<li>'+type.ekzempliars+'</li>'+
-    '<li>'+type.kolStranic+" Всего глав: "+type.getGlavi()+'</li>'+
+    '<li>'+type.kolStranic+". Всего глав: "+type.getGlavi()+'</li>'+
     '<li><button class="delete">Удалить</button></li>';
 
     listAll.appendChild(ulList);
